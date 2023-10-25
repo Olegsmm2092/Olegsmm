@@ -7,10 +7,10 @@ def main():
    operation = str(input('type a calc operation (add/divide): '))
    # print(operation is add.__name__) # bag
    # print(operation ==  add.__name__) # fix bag
-   if operation is add.__name__:
+   if operation == add.__name__:
       output = add(5,5)
       print(f'calc operation {add.__name__} = {output}')
-   elif operation is divide.__name__:
+   elif operation == divide.__name__:
       output = divide(5,5)
       print(f'calc operation {divide.__name__} = {output}')
    else:
