@@ -1,8 +1,11 @@
 from calc import add
-from greeting import greeting
+from greeting import greet
 
 
 def main():
-   greeting()
-   add(5,5)
+   greet()
+   output = add(5,5)
+   print(f'calc operation {add.__name__} = {output}')
 
+if __name__ == '__main__':
+   main()

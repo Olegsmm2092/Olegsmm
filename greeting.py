@@ -1,2 +1,2 @@
-def greeting():
-   return "Welcome to calc"
+def greet():
+   print("Welcome to calc")
