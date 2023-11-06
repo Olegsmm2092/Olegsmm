@@ -1,3 +1,4 @@
+import json
 from flask import Flask, jsonify
 import os
 from extentions import db
@@ -25,12 +26,16 @@ def flat():
 if __name__ == '__main__':
     from seed_rel import create_tables, seed_user_db
     ...
-    # with app.app_context():
+    with app.app_context():
         # seed_user_db('unit', '123')
         # seed_user_db('enemy', '123'[::-1])
-        # user = User.query.filter_by(username='unit2')
+        units = Unit.query.all()
+        units_data = [n.as_dict() for n in units]
+        # user = User.query.filter_by(username='enemy')
+        # users_data = [n.as_dict() for n in user]
         # users_data = [n.as_dict() for n in user[0]['units']]
-        # print(users_data)
+        # print(users_data[0]['units'][0]['user_id'])
+        print(units_data)
         
 
     # app.run()

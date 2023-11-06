@@ -16,7 +16,7 @@ def seed_user_db(username, password):
     db.session.commit()
 
     # Create a new unit
-    new_unit = Unit(name=new_user.username, desc='role warrior')
+    new_unit = Unit(name=new_user.username, desc='role warrior', user_id=new_user.id)
     db.session.add(new_unit)
     db.session.commit()
 
