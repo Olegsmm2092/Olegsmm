@@ -17,7 +17,6 @@ from models.model import User, Unit
 
 migrate = Migrate(app, db)
 
-
 @app.route('/')
 def flat():
    return '<h3>Crudapp Migrate</h3>'
@@ -35,4 +34,4 @@ if __name__ == '__main__':
         # print(users_data)
         
 
-    # app.run()
+    app.run()
