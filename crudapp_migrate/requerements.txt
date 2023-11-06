@@ -1,0 +1,4 @@
+flask-migrate
+flask
+python-dotenv
+flask-sqlalchemy
