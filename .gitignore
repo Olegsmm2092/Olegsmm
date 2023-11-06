@@ -1,4 +1,5 @@
 e
+.env
 test/crud/
-crudapp_migrate/poetry-migrate/env
+crudapp_migrate/poetry-migrate/.env
 crudapp_migrate/ReadMe/*

@@ -1,4 +1,3 @@
-
 from flask import Flask, jsonify
 import os
 from extentions import db
@@ -9,7 +8,7 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.config.from_object('config')
-# app.config['SECRET_KEY'] = os.urandom(24)
+app.config['SECRET_KEY'] = os.urandom(24)
 db.init_app(app)
 
 # Import your models (User and Unit) here below the import of db
@@ -34,4 +33,4 @@ if __name__ == '__main__':
         # print(users_data)
         
 
-    app.run()
+    # app.run()
