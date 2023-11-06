@@ -1,3 +1,4 @@
 e
 test/crud/
+crudapp_migrate/poetry-migrate/*
 crudapp_migrate/env
